@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;             /* thickness of scrollbar */
+  height: 8px;            /* for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-lightgray);     /* background of track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray);  /* scrollbar handle color */
+  border-radius: 8px;      /* round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;  /* hover effect */
+}
+
+
+@theme{
+    --color-cyan: oklch(78.9% 0.154 211.53);
+    --color-emerald: oklch(76.5% 0.177 163.223);
+    
+    --color-bgcolor: #FAFAFA;
+    --color-bgcolorless: #F0F0F0;
+    
+    --color-textcolor: black;
+    --color-textcolorless: oklch(45% 0.013 285.805);
+    
+    --color-lightgray: oklch(96.7% 0.001 286.375);
+    --color-darkgray: oklch(37% 0.013 285.805);
+    
+    --color-bordercolor: oklch(92.8% 0.006 264.531);
+    
+    --color-gray: #a8a8a8;
+    --color-bordercolor: #e2e8f0;
+  }
+  .dark{
+    --color-cyan: oklch(78.9% 0.154 211.53);
+    --color-emerald: oklch(76.5% 0.177 163.223);
+    
+    --color-bgcolor: #212121;
+    --color-bgcolorless: #2C2C2C;
+    
+    --color-textcolor: white;
+    --color-textcolorless: oklch(90% 0.001 286.375);
+    
+    --color-lightgray: oklch(37.032% 0.01192 285.76);
+    --color-darkgray: oklch(96.7% 0.001 286.375);
+    
+    --color-bordercolor: oklch(37% 0.013 285.805);
+    
+    --color-gray: #5f5f5f;
+    --color-bordercolor: #334155;
+}

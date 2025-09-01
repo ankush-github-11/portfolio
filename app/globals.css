@@ -37,7 +37,7 @@
     
     --color-bordercolor: oklch(92.8% 0.006 264.531);
     
-    --color-gray: #a8a8a8;
+    --color-gray: #bbbbbb;
     --color-bordercolor: #e2e8f0;
   }
   .dark{
@@ -55,6 +55,6 @@
     
     --color-bordercolor: oklch(37% 0.013 285.805);
     
-    --color-gray: #5f5f5f;
+    --color-gray: #787878;
     --color-bordercolor: #334155;
 }

@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/layout/Navbar";
-import { ModeToggle } from "@/components/ui/ModeToggleButton";
+import { ModeToggleButton } from "@/components/ui/ModeToggleButton";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         />
       </div>
       <Navbar />
-      <ModeToggle />
+      <ModeToggleButton />
       <Hero />
     </main>
   );

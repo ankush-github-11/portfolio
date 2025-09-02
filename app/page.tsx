@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 sm:px-2 px-1 bg-bgcolor">
-      <div className=" flex h-[90%] w-full items-center justify-center bg-bgcolor">
+    <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 sm:px-2 px-1 bg-bgcolor">
+      <div className=" flex h-fit w-full items-center justify-center bg-bgcolor">
         <div
         className={cn(
           "absolute top-0 inset-0",

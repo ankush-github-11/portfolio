@@ -3,13 +3,13 @@ import React from 'react'
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <div className='flex justify-between w-full'>
+    <div className='flex justify-center w-full'>
       <Image 
         src="/images/logo.png" 
         alt="Logo" 
         width={70} 
         height={70} 
-        className='z-1'
+        className='z-1 absolute left-0 top-0'
       />
       <div className='hidden z-1 w-fit h-fit rounded-full sm:flex flex-col items-center'>
           <div className='flex gap-7 h-full w-full px-5 py-2 rounded-full'>
@@ -19,7 +19,6 @@ const Navbar = () => {
           </div>
           <div className='w-[110%] h-[1.5px] bg-gradient-to-r from-cyan-500 to-emerald-400'></div>
       </div>
-      <div></div>
       <div className=' z-10 h-[40px] flex sm:hidden fixed bottom-4 w-screen justify-center'>
         <div className='h-[40px] w-[250px] bg-bgcolorless flex justify-evenly items-center rounded-full border-2 border-bordercolor'>
           <div className='flex justify-center flex-col items-center cursor-pointer'>

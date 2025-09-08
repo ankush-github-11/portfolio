@@ -52,59 +52,120 @@
     animation: spin-slow 6s linear infinite;
 }
 
-.button {
-    margin-top: 20px;
-    position: relative;
-    width: 135px;
-    height: 40px;
-    background-color: var(--color-bgcolorless);
-    display: flex;
-    align-items: center;
-    color: var(--color-textcolor);
-    font-weight: 600;
-    font-size: 17px;
-    justify-content: center;
-    border: none;
-    padding: 12px;
-    letter-spacing: 1px;
-    gap: 12px;
-    border-radius: 8px;
+/* From Uiverse.io by adamgiebl */ 
+.buttonCTA1 {
+  font-family: inherit;
+  font-size: 20px;
+  background: linear-gradient(155deg, var(--color-cyan-500), var(--color-emerald-500));
+  color: white;
+  padding: 0.5em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 175px;
+}
+
+.buttonCTA1 span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.buttonCTA1 svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonCTA1:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.buttonCTA1:hover svg {
+  transform: translateX(2.8em) rotate(45deg) scale(1.1);
+}
+
+.buttonCTA1:hover span {
+  transform: translateX(10em);
+}
+
+.buttonCTA1:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.12em);
+  }
+  to {
+    transform: translateY(-0.12em);
+  }
+}
+
+  .buttonCTA2 {
     cursor: pointer;
-}
-
-.button::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -4px;
-    margin: auto;
-    width: 143px;
-    height: 48px;
-    border-radius: 10px;
-    background: linear-gradient(-45deg, var(--color-cyan-500) 0%, var(--color-emerald-500) 100%);
-    z-index: -10;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.button::after {
+    font-size: 1.4rem;
+    border-radius: 16px;
+    border: none;
+    padding: 2px;
+    background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+    position: relative;
+    width: 150px;
+  }
+  .buttonCTA2::after {
     content: "";
-    z-index: -1;
     position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, var(--color-cyan-400) 0%, var(--color-emerald-400) 100%);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-}
+    width: 65%;
+    height: 60%;
+    border-radius: 120px;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 20px var(--color-bgcolorless);
+    z-index: -1;
+  }
 
-.button:hover::after {
-    filter: blur(30px);
-}
+  .blob1 {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    border-radius: 16px;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+      circle 60px at 0% 100%,
+      var(--color-cyan-500),
+      var(--color-emerald-500),
+      transparent
+    );
+    box-shadow: -10px 10px 30px var(--color-bgcolorless);
+  }
 
-.button:hover::before {
-    transform: rotate(-180deg);
-}
-
-.button:active::before {
-    scale: 0.7;
-}
+  .inner {
+    padding: 14px 25px;
+    border-radius: 14px;
+    color: var(--color-textcolor);
+    z-index: 3;
+    position: relative;
+    background: radial-gradient(circle 80px at 80% -50%, #777777, var(--color-bgcolor));
+  }
+  .inner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+    background: radial-gradient(
+      circle 60px at 0% 100%,
+      #00e1ff1a,
+      #0000ff11,
+      transparent
+    );
+    position: absolute;
+  }

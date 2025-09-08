@@ -3,6 +3,7 @@ import "@/styles/hero.css";
 import { MapPin } from 'lucide-react';
 import Image from 'next/image';
 import ButtonCTA1 from './ui/ButtonCTA1';
+import ButtonCTA2 from './ui/ButtonCTA2';
 const Hero = () => {
   return (
     <div className='w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-evenly items-center gap-10 px-2'>
@@ -22,7 +23,10 @@ const Hero = () => {
         <h1 className="font-regular flex flex-col flex-wrap w-full text-textcolorless">
           Full Stack Developer at heart, AI/ML enthusiast by curiosity, and a problem-solver fueled by DSA. I create systems that are smart, seamless, and scalable.
         </h1>
-        <ButtonCTA1 />
+        <div className='flex flex-wrap gap-5 mt-5 h-min'>
+          <ButtonCTA1 />
+          <ButtonCTA2 />
+        </div>
       </div>
       <div className="z-1 h-fit w-full md:w-[30%] md:mt-[-200px] mt-[50px] flex flex-col items-center gap-2">
         <div className='relative bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full'>

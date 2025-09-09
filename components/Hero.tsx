@@ -41,7 +41,7 @@ const Hero = () => {
               />
           </div>
         </div>
-        <h1 className='bg-bgcolorless p-2 rounded-lg text-textcolorless font-medium text-xl tracking-wide flex gap-2'>Web Developer <div className='rounded-full w-[2px] min-h-[30px] bg-cyan' /> ML Expert <div className='rounded-2xl w-[2px] min-h-[30px] bg-emerald' /> Problem Solver</h1>
+        <h1 className='bg-bgcolorless p-2 rounded-lg text-textcolorless font-medium text-xl tracking-wide flex gap-2 text-center'>Web Developer <div className='rounded-full w-[2px] min-h-[30px] bg-cyan text-center' /> ML Expert <div className='rounded-2xl w-[2px] min-h-[30px] bg-emerald text-center' /> Problem Solver</h1>
       </div>
     </div>
   )

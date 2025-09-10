@@ -55,11 +55,11 @@
 /* From Uiverse.io by adamgiebl */ 
 .buttonCTA1 {
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   background: linear-gradient(155deg, var(--color-cyan-600), var(--color-emerald-600));
   color: white;
-  padding: 0.5em 1em;
-  padding-left: 0.9em;
+  padding: 0.25em 0.5em;
+  padding-left: 1.2em;
   display: flex;
   align-items: center;
   border: none;
@@ -67,14 +67,15 @@
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
-  width: 175px;
+  width: 160px;
 }
 
 .buttonCTA1 span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.025em;
 }
 
 .buttonCTA1 svg {
@@ -88,7 +89,7 @@
 }
 
 .buttonCTA1:hover svg {
-  transform: translateX(2.8em) rotate(45deg) scale(1.1);
+  transform: translateX(3.1em) rotate(45deg) scale(1.1);
 }
 
 .buttonCTA1:hover span {

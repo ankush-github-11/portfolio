@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ankush Bhattacharjee's Portfolio",
   description: "Modern Portfolio made using Next JS, TS, React and Tailwind",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

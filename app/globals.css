@@ -25,7 +25,9 @@
 @theme{
     --color-cyan: oklch(78.9% 0.154 211.53);
     --color-emerald: oklch(76.5% 0.177 163.223);
-    
+    --color-cyan-light: #a5f3fc; 
+    --color-cyan-dark: #083344; 
+
     --color-bgcolor: #FAFAFA;
     --color-bgcolorless: #F0F0F0;
     
@@ -43,6 +45,8 @@
   .dark{
     --color-cyan: oklch(78.9% 0.154 211.53);
     --color-emerald: oklch(76.5% 0.177 163.223);
+    --color-cyan-light: #083344; 
+    --color-cyan-dark: #a5f3fc; 
     
     --color-bgcolor: #212121;
     --color-bgcolorless: #2C2C2C;
@@ -57,4 +61,4 @@
     
     --color-gray: #787878;
     --color-bordercolor: #334155;
-}
+  }

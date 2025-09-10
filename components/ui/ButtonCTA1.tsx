@@ -1,7 +1,13 @@
 import React from 'react';
 const ButtonCTA1 = () => {
   return (
-    <button className="buttonCTA1">
+      <button
+        className="
+          buttonCTA1 
+          bg-[linear-gradient(155deg,var(--color-cyan-400),var(--color-emerald-400))]
+          dark:bg-[linear-gradient(155deg,var(--color-cyan-600),var(--color-emerald-600))]
+        "
+      >
       <div className="svg-wrapper-1">
         <div className="svg-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24}>

@@ -10,12 +10,10 @@ export const BeamCollision = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  // removed parentRef & containerRef as requested
-
   const beams = [
     {
-      initialX: 10,
-      translateX: 10,
+      initialX: 50,
+      translateX: 50,
       duration: 7,
       repeatDelay: 3,
       delay: 2,
@@ -63,12 +61,20 @@ export const BeamCollision = ({
       delay: 2,
       className: "h-6",
     },
+    {
+      initialX: 1500,
+      translateX: 1500,
+      duration: 4,
+      repeatDelay: 5,
+      delay: 2,
+      className: "h-8",
+    },
   ];
 
   return (
     <div
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+        "min-h-screen h-fit bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
         className
       )}
     >

@@ -28,20 +28,28 @@ const Hero = () => {
           <ButtonCTA2 />
         </div>
       </div>
-      <div className="z-1 h-fit w-full md:w-[30%] md:mt-[-200px] mt-[50px] flex flex-col items-center gap-2">
-        <div className='relative bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full'>
-          <div className="rounded-full hidden dark:flex absolute -inset-10 bg-gradient-to-r from-cyan-500 to-emerald-500 blur-3xl opacity-35"/>
-          <div className='rounded-full z-1 m-[15px] bg-bgcolor'>
-            <Image
-              src="/images/hero.png"
-              alt="Logo"
-              width={300}
-              height={300}
-              className="relative top-[23px] z-1"
-              />
+      <div className="z-1 h-[500px] w-full md:w-[30%] md:mt-[-200px] mt-[50px] flex flex-col items-center gap-2">
+        <div className="relative top-25 bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-10 blur-2xl">
+          <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400 blur-[100px] opacity-70" />
+          <div className="relative bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-2 blur-md">
+            <div className="h-60 w-60 bg-bgcolor rounded-full blur-xl"></div>
           </div>
+        </div>   
+
+        <Image
+          src="/images/hero.png"
+          alt="Logo"
+          width={300}
+          height={300}
+          className="z-1 relative -top-55"
+        />
+        <div className="italic relative -top-57 bg-bgcolor border-2 border-bordercolor p-2 rounded-lg text-textcolorless font-medium text-xl opacity-60 tracking-wide flex gap-2 text-center">
+          <span>Web Developer</span>
+          <div className="rounded-full w-[2px] min-h-[30px] bg-cyan" />
+          <span>ML Expert</span>
+          <div className="rounded-2xl w-[2px] min-h-[30px] bg-emerald" />
+          <span>Problem Solver</span>
         </div>
-        <h1 className='bg-bgcolorless p-2 rounded-lg text-textcolorless font-medium text-xl tracking-wide flex gap-2 text-center'>Web Developer <div className='rounded-full w-[2px] min-h-[30px] bg-cyan text-center' /> ML Expert <div className='rounded-2xl w-[2px] min-h-[30px] bg-emerald text-center' /> Problem Solver</h1>
       </div>
     </div>
   )

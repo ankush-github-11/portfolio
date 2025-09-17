@@ -108,64 +108,77 @@
   }
 }
 
-  .buttonCTA2 {
-    cursor: pointer;
-    font-size: 1.4rem;
-    border-radius: 16px;
-    border: none;
-    padding: 2px;
-    background: radial-gradient(circle 80px at 80% -10%, #ffffff, var(--color-lightgray));
-    position: relative;
-    width: 150px;
-  }
-  .buttonCTA2::after {
-    content: "";
-    position: absolute;
-    width: 65%;
-    height: 60%;
-    border-radius: 120px;
-    top: 0;
-    right: 0;
-    box-shadow: 0 0 20px var(--color-bgcolorless);
-    z-index: -1;
-  }
+.buttonCTA2 {
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 16px;
+  border: none;
+  padding: 2px;
+  background: radial-gradient(circle 80px at 80% -10%, #ffffff, var(--color-lightgray));
+  position: relative;
+  width: 150px;
+}
+.buttonCTA2::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  border-radius: 120px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 20px var(--color-bgcolorless);
+  z-index: -1;
+}
 
-  .blob1 {
-    position: absolute;
-    width: 70px;
-    height: 100%;
-    border-radius: 16px;
-    bottom: 0;
-    left: 0;
-    background: radial-gradient(
-      circle 60px at 0% 100%,
-      var(--color-cyan-500),
-      var(--color-emerald-500),
-      transparent
-    );
-    box-shadow: -10px 10px 30px var(--color-bgcolorless);
-  }
+.blob1 {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    var(--color-cyan-500),
+    var(--color-emerald-500),
+    transparent
+  );
+  box-shadow: -10px 10px 30px var(--color-bgcolorless);
+}
 
-  .inner {
-    padding: 7px 25px;
-    border-radius: 14px;
-    color: var(--color-textcolor);
-    z-index: 3;
-    position: relative;
-    background: radial-gradient(circle 80px at 80% -50%, #777777, var(--color-bgcolor));
+.inner {
+  padding: 7px 25px;
+  border-radius: 14px;
+  color: var(--color-textcolor);
+  z-index: 3;
+  position: relative;
+  background: radial-gradient(circle 80px at 80% -50%, #777777, var(--color-bgcolor));
+}
+.inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    #00e1ff1a,
+    #0000ff11,
+    transparent
+  );
+  position: absolute;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-15%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
-  .inner::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 14px;
-    background: radial-gradient(
-      circle 60px at 0% 100%,
-      #00e1ff1a,
-      #0000ff11,
-      transparent
-    );
-    position: absolute;
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+.my-bounce {
+  animation: bounce 2.2s infinite;
+}

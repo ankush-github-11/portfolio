@@ -5,7 +5,6 @@ import ButtonCTA1 from './ui/ButtonCTA1';
 import ButtonCTA2 from './ui/ButtonCTA2';
 import HeroLanguageButton from './ui/HeroLanguageButton';
 import Image from 'next/image';
-import Hello from './Hello';
 
 const Hero = () => {
   return (

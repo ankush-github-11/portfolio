@@ -5,11 +5,12 @@ import ButtonCTA1 from './ui/ButtonCTA1';
 import ButtonCTA2 from './ui/ButtonCTA2';
 import HeroLanguageButton from './ui/HeroLanguageButton';
 import Image from 'next/image';
+import Hello from './Hello';
 
 const Hero = () => {
   return (
     <div className='w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-evenly items-center gap-10 px-2 sm:pb-0 pb-10'>
-      <div className='z-1 flex flex-col gap-2 h-fit w-full md:w-[45%] md:mt-[-200px] mt-[50px]'>
+      <div className='z-1 flex flex-col gap-2 h-fit w-full md:w-[45%] md:mt-[-200px] mt-[130px]'>
         <h1 className='font-bold text-[28px]'>Hi, I’m
           <span className='text-emerald-400 text-4xl mx-2 wave-text'>
             <span>A</span>

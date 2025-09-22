@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function CodeBlock() {
-  const fileNameTitle = ["Card.tsx", "LinearRegression.py"];
+  const fileNameTitle = ["Card.tsx", "Regression.py", "server.js", "users.php", "listBuckets.js"];
   const codes = [
     `import { useState } from "react";
 
@@ -43,7 +43,71 @@ model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 print("Predictions:", y_pred)
-print("Accuracy:", model.score(X_test, y_test))`
+print("Accuracy:", model.score(X_test, y_test))`,
+
+`import express from "express";
+import mongoose from "mongoose";
+
+const app = express();
+app.use(express.json());
+
+mongoose.connect("mongodb://localhost:27017/mydb");
+
+const userSchema = new mongoose.Schema({ 
+  name: String, email: String 
+});
+const User = mongoose.model("User", userSchema);
+
+app.post("/users", async (req, res) => {
+  const user = new User(req.body);
+  await user.save();
+  res.json(user);
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+`,
+`<?php
+$host = "localhost, $user = "root", $pass = "", $dbname = "mydb";
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM users";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+  }
+}
+else echo "0 results";
+
+$conn->close();
+?>
+`,
+`import { S3Client, ListBucketsCommand } from "@aws-sdk/client-s3";
+
+const s3 = new S3Client({
+  region: "ap-south-1",
+});
+
+async function listBuckets() {
+  try {
+    const data = await s3.send(new ListBucketsCommand({}));
+    console.log("S3 Buckets:");
+    data.Buckets.forEach((bucket) => {
+      console.log(" -", bucket.Name);
+    });
+  } catch (err) {
+    console.error("Error:", err);
+  }
+}
+
+listBuckets();
+`,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,7 +127,6 @@ print("Accuracy:", model.score(X_test, y_test))`
         <div className="bg-yellow-500 h-4 w-4 rounded-full" />
         <div className="bg-green-500 h-4 w-4 rounded-full" />
 
-        {/* Filename with synchronized fade */}
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -79,7 +142,6 @@ print("Accuracy:", model.score(X_test, y_test))`
       </div>
 
       <div className="p-2">
-        {/* Code block with synchronized fade */}
         <AnimatePresence mode="wait">
           <motion.pre
             key={currentIndex}
@@ -87,7 +149,7 @@ print("Accuracy:", model.score(X_test, y_test))`
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto"
+            className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto code-block"
           >
             <code>{codes[currentIndex]}</code>
           </motion.pre>

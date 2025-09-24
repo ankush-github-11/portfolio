@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/layout/Navbar";
+import Skills from "@/components/Skills";
 import { ModeToggleButton } from "@/components/ui/ModeToggleButton";
 import { cn } from "@/lib/utils";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <ModeToggleButton />
       <Hero />
       <About />
+      <Skills />
     </main>
   );
 }

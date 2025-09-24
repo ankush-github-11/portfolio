@@ -41,6 +41,8 @@
     
     --color-gray: #bbbbbb;
     --color-bordercolor: #e2e8f0;
+
+    --color-skills-card-bg: rgb(210, 250, 240);
   }
   .dark{
     --color-cyan: oklch(78.9% 0.154 211.53);
@@ -61,4 +63,6 @@
     
     --color-gray: #787878;
     --color-bordercolor: #334155;
+
+    --color-skills-card-bg: rgb(36, 61, 53);
   }

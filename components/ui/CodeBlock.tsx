@@ -134,7 +134,7 @@ listBuckets();
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="ml-2 w-fit h-10 bg-inherit flex items-center justify-center px-5 rounded-tl-lg rounded-tr-lg"
+            className="ml-2 w-fit h-10 bg-inherit flex items-center justify-center px-5 rounded-tl-lg rounded-tr-lg text-textcolorless"
           >
             {fileNameTitle[currentIndex]}
           </motion.div>
@@ -149,7 +149,7 @@ listBuckets();
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto code-block"
+            className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto code-block text-textcolorless"
           >
             <code>{codes[currentIndex]}</code>
           </motion.pre>

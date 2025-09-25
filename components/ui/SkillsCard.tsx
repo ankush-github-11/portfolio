@@ -13,7 +13,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ children, title }) => {
   return (
     <div
       className="
-        skillsCardCSS
+        skillsCardCSS overflow-hidden
         relative 
         flex flex-col items-center justify-center
         aspect-square w-full

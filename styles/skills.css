@@ -1,4 +1,4 @@
-.btn-donate {
+.skillsCardCSS {
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: var(--color-skills-card-bg);
   --btn-bg-2: var(--color-bgcolor);
@@ -25,12 +25,10 @@
   justify-content: center;
   align-items: center;
 }
-
-.btn-donate:hover {
+.skillsCardCSS:hover {
   background-position: right top;
 }
-
-.btn-donate:is(:focus, :focus-visible, :active) {
+.skillsCardCSS:is(:focus, :focus-visible, :active) {
   outline: none;
   box-shadow:
     0 0 0 3px var(--btn-bg-color),
@@ -38,7 +36,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-donate {
+.skillsCardCSS {
     transition: linear;
   }
 }

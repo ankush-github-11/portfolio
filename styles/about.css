@@ -1,7 +1,0 @@
-.text-outline {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--color-textcolor);
-}
-.code-block{
-  transition: height 2s;
-}

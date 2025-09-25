@@ -42,3 +42,8 @@
     transition: linear;
   }
 }
+@media only screen and (max-width: 400px) {
+  .skillsCardParentDiv{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

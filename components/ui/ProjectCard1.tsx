@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectCard1 = () => {
   return (
-    <div className='h-screen w-[95%] sm:w-[85%] mx-auto p-[5px] rounded-2xl bg-bgcolorless relative'>
+    <div className='h-screen w-[95%] sm:w-[85%] mx-auto p-[5px] rounded-2xl bg-bgcolorless relative overflow-hidden'>
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-cyan to-transparent opacity-70">
         <div className="absolute inset-0 bg-textcolor blur-2xl opacity-70"></div>
         <div className="absolute inset-0 bg-textcolor blur-xl opacity-50"></div>

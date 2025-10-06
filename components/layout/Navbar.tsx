@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
           <div className='w-[110%] h-[1.5px] bg-gradient-to-r from-cyan-500 to-emerald-400'></div>
       </div>
-      <div className=' z-10 h-[60px] flex sm:hidden fixed bottom-4 w-screen justify-center'>
+      <div className=' z-100 h-[60px] flex sm:hidden fixed bottom-4 w-screen justify-center'>
         <div className='h-[60px] w-[300px] bg-bgcolorless flex justify-evenly items-center rounded-full border-2 border-bordercolor'>
           <div className='w-[100px] flex justify-center flex-col items-center cursor-pointer'>
             <WandSparkles strokeWidth={1.5} className='h-5 w-5' />

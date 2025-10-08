@@ -1,5 +1,6 @@
 import React from "react";
 import SkillsCard from "./ui/SkillsCard";
+import "../styles/projects.css";
 
 const Skills = () => {
   return (

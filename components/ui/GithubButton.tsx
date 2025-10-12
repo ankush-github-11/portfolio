@@ -22,7 +22,7 @@ const GithubButton : React.FC<GithubButtonProps> = ({url}) => {
                     </g>
                 </svg>
             </div>
-            <div className='font-semibold'>GitHub</div>
+            <div className='font-semibold tracking-wide'>GitHub</div>
         </div>
     </a>
   );

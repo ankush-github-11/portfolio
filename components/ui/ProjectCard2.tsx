@@ -9,7 +9,7 @@ const ProjectCard1 = () => {
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-textcolor to-transparent opacity-70" />
       <div className='border-b-3 border-l-3 border-r-3 border-gray/40 rounded-xl h-[100%] overflow-hidden relative p-3 sm:p-7 sm:pb-0 flex flex-col items-center'>
         <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-textcolor to-transparent opacity-50 z-10" />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-project-1 to-transparent opacity-0 group-hover/main:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] pointer-events-none z-0 motion-safe:transition-opacity motion-reduce:transition-none" />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-project-2 to-transparent opacity-0 group-hover/main:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] pointer-events-none z-0 motion-safe:transition-opacity motion-reduce:transition-none" />
         <div className='w-full z-20 flex md:flex-row md:items-center md:justify-between flex-col items-between justify-center gap-y-3'>
           <div className='w-fit'>
             <h1 className='font-bold text-2xl'>EtherType</h1>

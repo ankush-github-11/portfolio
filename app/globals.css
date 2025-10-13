@@ -45,6 +45,7 @@
     --color-skills-card-bg: rgb(210, 250, 240);
 
     --color-project-1: rgb(193, 204, 220);
+    --color-project-2: oklch(91.7% 0.08 205.041);
   }
   .dark{
     --color-cyan: oklch(78.9% 0.154 211.53);
@@ -69,4 +70,6 @@
     --color-skills-card-bg: rgb(36, 61, 53);
 
     --color-project-1: #525f67;
+    --color-project-2: oklch(52% 0.105 223.128);
+    
   }

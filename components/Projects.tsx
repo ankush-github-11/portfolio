@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectCard1 from './ui/ProjectCard1'
 import ProjectCard2 from './ui/ProjectCard2'
+import ProjectCard3 from './ui/ProjectCard3'
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
         </div>
         <ProjectCard1 />
         <ProjectCard2 />
+        <ProjectCard3 />
     </div>
   )
 }

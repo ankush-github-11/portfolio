@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="max-w-md mx-auto my-10 p-6 rounded-2xl shadow-lg">
+    <section className="max-w-md mx-auto my-10 p-6 rounded-2xl shadow-lg bg-bgcolorless">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="">
           <label className="block mb-1 font-medium text-gray-700 dark:text-gray-200">
@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-emerald-500 text-white py-2 rounded-lg font-semibold hover:bg-emerald-600 transition-colors"
+          className="w-full bg-gradient-to-r from-emerald-500 to-cyan-500 text-white py-2 rounded-lg font-semibold hover:bg-emerald-600 transition-colors cursor-pointer"
         >
           Send Message
         </button>

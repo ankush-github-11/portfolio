@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -10,33 +11,49 @@ const ContactForm: React.FC = () => {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simple validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus("Please fill out all fields.");
       return;
     }
 
-    try {
-      // You can replace this with API or EmailJS logic
-      console.log("Form submitted:", formData);
-      setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      setStatus("Something went wrong. Please try again later.");
-    }
+    setStatus("Sending...");
+
+    emailjs
+      .send(
+        "service_94pq7lo",
+        "template_ph289bp",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "Nc_hirJQUryI5wEad"
+      )
+      .then(
+        () => {
+          setStatus("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error(error);
+          setStatus("Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
     <section className="max-w-md mx-auto my-10 p-6 rounded-2xl shadow-lg bg-bgcolorless">
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="">
+        <div>
           <label className="block mb-1 font-medium text-gray-700 dark:text-gray-200">
             Your Name
           </label>
@@ -65,7 +82,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">
+          <label className="block mb-1 font-medium text-gray-700 dark:text-gray-200">
             Message
           </label>
           <textarea

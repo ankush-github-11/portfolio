@@ -5,7 +5,7 @@ import ProjectCard3 from './ui/ProjectCard3'
 
 const Projects = () => {
   return (
-    <div className='h-fit w-full'>
+    <div className='h-fit w-full flex flex-col gap-10 mb-20'>
         <div className='w-[95%] mx-auto'>
           <h2 className="text-4xl font-extrabold text-textcolor mb-2">Projects</h2>
         </div>

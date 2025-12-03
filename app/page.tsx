@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 pb-15 bg-bgcolor gap-20">
+    <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 pb-15 bg-bgcolor">
       <div className="flex h-fit w-full items-center justify-center bg-bgcolor">
         <div
         className={cn(

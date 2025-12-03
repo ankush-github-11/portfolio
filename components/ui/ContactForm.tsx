@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg border border-bordercolor outline-none focus:ring-2 focus:ring-emerald-300 dark:focus:ring-emerald-900"
+            className="w-full px-4 py-2 rounded-lg border-2 border-gray/50 dark:border-bordercolor outline-none focus:border-emerald-300 dark:focus:border-emerald-700"
             placeholder="Enter your name"
           />
         </div>
@@ -76,7 +76,7 @@ const ContactForm: React.FC = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg border border-bordercolor outline-none focus:ring-2 focus:ring-emerald-300 dark:focus:ring-emerald-900"
+            className="w-full px-4 py-2 rounded-lg border-2 border-gray/50 dark:border-bordercolor outline-none focus:border-emerald-300 dark:focus:border-emerald-700"
             placeholder="you@example.com"
           />
         </div>
@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="w-full px-4 py-2 rounded-lg border border-bordercolor focus:ring-2 focus:ring-emerald-300 dark:focus:ring-emerald-900 outline-none"
+            className="w-full px-4 py-2 rounded-lg border-2 border-gray/50 dark:border-bordercolor focus:border-emerald-300 dark:focus:border-emerald-700 outline-none"
             placeholder="Write your message here..."
           />
         </div>

@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
-
 /* Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
   width: 8px;             /* thickness of scrollbar */

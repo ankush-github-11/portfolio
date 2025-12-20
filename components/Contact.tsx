@@ -7,8 +7,8 @@ const Contact = () => {
     <div className='w-full h-fit'>
         <div className='px-[3%] h-full'>
             <div className='h-fit w-full border-5 border-bgcolorless rounded-xl flex flex-col md:flex-row'>
-                <div className='left-div h-fit w-full md-w-[50%] p-5'>
-                    <div className='mx-2 md:mx-8 bg-bgcolorless p-4 rounded-lg flex flex-col justify-center'>
+                <div className='left-div h-fit w-full md-w-[50%] p-2 md:p-5'>
+                    <div className='bg-bgcolorless p-3 md:p-4 rounded-lg flex flex-col justify-center w-full'>
                         <h1 className='w-fit h-fit text-3xl font-bold'>Contact Me</h1>
                         <div className='flex flex-wrap gap-1 w-full'>Let&apos;s get in touch — Open to opportunities and collaborations.</div>
                     </div>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { useScroll } from '@/context/ScrollContext';
 const ButtonCTA1 = () => {
+  const { scrollToContact } = useScroll();
   return (
-      <button
+      <button onClick={scrollToContact}
         className="
           buttonCTA1 
           bg-[linear-gradient(155deg,var(--color-cyan-400),var(--color-emerald-400))]

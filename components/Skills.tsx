@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import SkillsCard from "./ui/SkillsCard";
 import "../styles/skills.css";
 
-const Skills = () => {
+const Skills = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="min-h-screen bg-bgcolor w-full flex flex-col gap-6 p-4 md:p-8 mb-20">
+    <div ref={ref} className="min-h-screen bg-bgcolor w-full flex flex-col gap-6 p-4 md:p-8 mb-20">
         <h2 className="text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
         <h3 className="text-2xl font-semibold text-textcolorless">Frontend</h3>
         <div className="skillsCardParentDiv grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 w-full gap-5 place-items-center">
@@ -97,6 +97,6 @@ const Skills = () => {
         </div>
     </div>
   );
-};
-
+});
+Skills.displayName = 'Skills';
 export default Skills;

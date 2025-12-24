@@ -4,6 +4,7 @@ import { createContext, useContext } from 'react';
 type ScrollContextType = {
   scrollToContact: () => void;
   scrollToProjects: () => void;
+  scrollToSkills: () => void;
 };
 
 const ScrollContext = createContext<ScrollContextType | null>(null);

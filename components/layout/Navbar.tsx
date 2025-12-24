@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useScroll } from '@/context/ScrollContext';
 const Navbar = () => {
   const { scrollToProjects } = useScroll();
+  const { scrollToSkills } = useScroll();
   return (
     <div className='flex justify-center w-full'>
       <Image 
@@ -15,7 +16,7 @@ const Navbar = () => {
       />
       <div className='hidden z-1 w-fit h-fit rounded-full sm:flex flex-col items-center'>
           <div className='flex gap-7 h-full w-full px-5 py-2 rounded-full'>
-              <div className='cursor-pointer font-semibold flex items-center'>Skills</div>
+              <div onClick={scrollToSkills} className='cursor-pointer font-semibold flex items-center'>Skills</div>
               <div onClick={scrollToProjects} className='cursor-pointer italic font-bold flex items-center'>My Works</div>
               <div className='cursor-pointer font-semibold flex items-center'>Services</div>
           </div>
@@ -25,7 +26,7 @@ const Navbar = () => {
         <div className='h-[60px] w-[300px] bg-bgcolorless flex justify-evenly items-center rounded-full border-2 border-bordercolor'>
           <div className='h-full w-[100px] flex justify-center flex-col items-center cursor-pointer'>
             <WandSparkles strokeWidth={1.5} className='h-5 w-5' />
-            <div className='font-medium tracking-wide text-[11px]'>Skills</div>
+            <div onClick={scrollToSkills} className='font-medium tracking-wide text-[11px]'>Skills</div>
           </div>
           <div className='rounded-full h-[70%] w-[2px] bg-cyan-700' />
           <div onClick={scrollToProjects} className='h-full w-[100px] flex justify-center flex-col items-center cursor-pointer'>

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import ProjectCard1 from './ui/ProjectCard1'
 import ProjectCard2 from './ui/ProjectCard2'
 import ProjectCard3 from './ui/ProjectCard3'
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className='h-fit w-full flex flex-col gap-10 mb-20'>
+    <div ref={ref} className='h-fit w-full flex flex-col gap-10 mb-20 pt-6'>
         <div className='w-[95%] mx-auto'>
           <h2 className="text-4xl font-extrabold text-textcolor mb-2">Projects</h2>
         </div>
@@ -13,7 +13,7 @@ const Projects = () => {
         <ProjectCard2 />
         <ProjectCard3 />
     </div>
-  )
-}
-
+  );
+});
+Projects.displayName = 'Projects';
 export default Projects

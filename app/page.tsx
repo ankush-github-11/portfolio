@@ -18,8 +18,15 @@ export default function Home() {
       block: "start",
     });
   };
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const scrollToProjects = () => {
+    projectsRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
-    <ScrollProvider value={{ scrollToContact }}>
+    <ScrollProvider value={{ scrollToContact, scrollToProjects }}>
       <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 pb-15 bg-bgcolor">
         <div className="flex h-fit w-full items-center justify-center bg-bgcolor">
           <div
@@ -40,7 +47,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
-        <Projects />
+        <Projects ref={projectsRef} />
         <Contact ref={contactRef}/>
       </main>
     </ScrollProvider>

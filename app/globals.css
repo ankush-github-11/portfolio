@@ -1,25 +1,20 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:is(.dark *));
-/* Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 8px;             /* thickness of scrollbar */
-  height: 8px;            /* for horizontal scrollbar */
+  width: 8px;
+  height: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: var(--color-lightgray);     /* background of track */
+  background: var(--color-lightgray);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-gray);  /* scrollbar handle color */
-  border-radius: 8px;      /* round edges */
+  background-color: var(--color-gray);
+  border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;  /* hover effect */
+  background-color: #555;
 }
-
 
 @theme{
     --color-cyan: oklch(78.9% 0.154 211.53);

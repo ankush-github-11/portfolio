@@ -9,7 +9,7 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
         <h2 className="text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
         <div className="h-fit w-full flex flex-row gap-2 items-center">
           <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">Frontend</h3>
-          <div className="flex-1 h-[2px] bg-lightgray/70 rounded-full mt-1" />
+          <div className="flex-1 h-[2px] bg-gray/30 dark:bg-lightgray/70 rounded-full mt-1" />
         </div>
         <div className="responsive-grid">
           <SkillsCard title="React JS">
@@ -51,7 +51,7 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
 
         <div className="h-fit w-full flex flex-row gap-2 items-center">
           <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">Backend</h3>
-          <div className="flex-1 h-[2px] bg-lightgray/70 rounded-full mt-1" />
+          <div className="flex-1 h-[2px] bg-gray/30 dark:bg-lightgray/70 rounded-full mt-1" />
         </div>
 
         <div className="responsive-grid">
@@ -86,7 +86,7 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
 
         <div className="h-fit w-full flex flex-row gap-2 items-center">
           <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">Machine Learning</h3>
-          <div className="flex-1 h-[2px] bg-lightgray/70 rounded-full mt-1" />
+          <div className="flex-1 h-[2px] bg-gray/30 dark:bg-lightgray/70 rounded-full mt-1" />
         </div>
 
         <div className="responsive-grid">

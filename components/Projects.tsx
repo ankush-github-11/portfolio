@@ -5,7 +5,7 @@ import ProjectCard3 from './ui/ProjectCard3'
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className='h-fit w-full flex flex-col gap-10 mb-20 pt-6'>
+    <div ref={ref} className='bg-gradient-to-br from-lightgray/80 to-bgcolor h-fit w-full flex flex-col gap-10 pt-10 pb-25'>
         <div className='w-[95%] mx-auto'>
           <h2 className="text-4xl font-extrabold text-textcolor mb-2">Projects</h2>
         </div>

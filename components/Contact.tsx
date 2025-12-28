@@ -6,7 +6,7 @@ import ContactForm from './ui/ContactForm';
 
 const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="w-full h-fit">
+    <div ref={ref} className="bg-gradient-to-br from-lightgray/80 to-bgcolor w-full h-fit pt-15 pb-20">
       <div className="px-[3%] h-full">
         <div className="h-fit w-full border-5 border-bgcolorless rounded-xl flex flex-col md:flex-row">
           <div className="left-div h-fit w-full md-w-[50%] p-2 md:p-5">

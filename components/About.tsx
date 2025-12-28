@@ -6,7 +6,7 @@ import CodeBlock from "./ui/CodeBlock";
 
 const About = () => {
   return (
-    <div className="bg-bgcolorless min-h-screen pt-20 mb-20 h-fit max-w-full">
+    <div className="bg-gradient-to-br from-lightgray/80 to-bgcolor min-h-screen pt-20 h-fit max-w-full">
       <div className="w-full flex lg:flex-row flex-col gap-x-5">
         {/* Left Section */}
         <div className="order-2 lg:order-1 flex-1 lg:m-3 mt-0 m-2">
@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         {/* Right Section */}
-        <BeamCollision className="pl-[7px] pr-[7px] pb-[75px] order-1 lg:order-2 bg-bgcolorless flex-1 w-full flex flex-col items-center justify-center text-center">
+        <BeamCollision className="pl-[7px] pr-[7px] pb-[75px] order-1 lg:order-2 bg-inherit flex-1 w-full flex flex-col items-center justify-center text-center">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-cyan-500 to-emerald-500 bg-clip-text text-transparent">
             About Me
           </h1>

@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/layout/Navbar";
 import Projects from "@/components/Projects";
@@ -33,7 +34,7 @@ export default function Home() {
   };
   return (
     <ScrollProvider value={{ scrollToContact, scrollToProjects, scrollToSkills }}>
-      <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 pb-15 bg-bgcolor">
+      <main className="relative h-fit bg-black-100 flex justify-center items-center flex-col overflow-hidden pt-3 bg-bgcolor">
         <Navbar />
         <ModeToggleButton />
         <Hero />
@@ -41,6 +42,7 @@ export default function Home() {
         <Skills ref={skillsRef} />
         <Projects ref={projectsRef} />
         <Contact ref={contactRef}/>
+        <Footer />
       </main>
     </ScrollProvider>
   );

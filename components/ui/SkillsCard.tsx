@@ -45,6 +45,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ children, title }) => {
       {/* Title */}
 <div
   className="
+    select-none
     absolute bottom-2
     px-2.5 py-1
     text-xs sm:text-sm

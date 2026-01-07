@@ -21,8 +21,8 @@ const Navbar = () => {
           <div className='flex gap-7 h-full w-full px-10 py-2 rounded-full'>
               <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>Skills</div>
               <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>My Works</div>
-              <a target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>GitHub <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
-              <a target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
+              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>GitHub <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
+              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
               {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
           </div>
           <div className='w-full h-[1.5px] bg-gradient-to-r from-cyan-500 to-emerald-400'></div>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
           <div className='rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700' />
 
-          <a target='_blank' href='https://github.com/ankush-github-11' className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
+          <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -64,7 +64,7 @@ const Navbar = () => {
 
           <div className='rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700' />
 
-          <a target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
+          <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
             <svg
               viewBox="0 0 382 382"
               className="w-4 h-5 fill-current transition-colors"

@@ -10,3 +10,9 @@
 .dark .colorCSS:hover {
   color: #12ccb0;
 }
+.colorCSS:active{
+  color: #454545;
+}
+.dark .colorCSS:active{
+  color: rgb(240, 240, 240);
+}

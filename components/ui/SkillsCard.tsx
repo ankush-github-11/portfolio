@@ -19,7 +19,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ children, title }) => {
         bg-white/10 dark:bg-white/5
         backdrop-blur-md
         shadow-lg
-        transition-all duration-300
+        transition-all duration-300 overflow-hidden
       "
     >
       {/* Glow Effects */}

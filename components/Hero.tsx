@@ -75,10 +75,7 @@ const Hero = () => {
             <div className="rounded-2xl w-[2px] min-h-[30px] bg-emerald" />
             <span>Problem Solver</span>
           </div>
-          <HeroLanguageButton
-            className="my-bounce z-10 relative top-[-400px] right-[90px]"
-            href="https://react.dev"
-          >
+          <HeroLanguageButton className="my-bounce z-10 relative top-[-400px] right-[90px]">
             <Image
               alt="React Logo"
               src="/images/react-logo.svg"
@@ -86,10 +83,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton
-            className="my-bounce z-10 relative top-[-670px] right-[40px]"
-            href="https://www.mongodb.com"
-          >
+          <HeroLanguageButton className="my-bounce z-10 relative top-[-670px] right-[40px]">
             <Image
               alt="MongoDB Logo"
               src="/images/mongodb-logo.svg"
@@ -97,10 +91,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton
-            className="my-bounce z-10 relative top-[-650px] left-[170px]"
-            href="https://aws.amazon.com"
-          >
+          <HeroLanguageButton className="my-bounce z-10 relative top-[-650px] left-[170px]">
             <Image
               alt="AWS Logo"
               src="/images/aws-logo-light.svg"

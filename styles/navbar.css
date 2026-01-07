@@ -1,0 +1,12 @@
+.colorCSS {
+  color: #454545;
+}
+.dark .colorCSS {
+  color: rgb(240, 240, 240);
+}
+.colorCSS:hover {
+  color: #00b972;
+}
+.dark .colorCSS:hover {
+  color: #12ccb0;
+}

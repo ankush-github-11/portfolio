@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-gradient-to-br from-lightgray/80 to-bgcolor backdrop-blur-md border-t border-white/20">
+    <footer className="w-full bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <div className="text-center md:text-left text-gray-700 dark:text-gray-300">
+        <div className="text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold">
           © {currentYear} • Built with ❤️ by Ankush
         </div>
         <div className="flex justify-center md:justify-end items-center gap-6">

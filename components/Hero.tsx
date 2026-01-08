@@ -23,7 +23,8 @@ const Hero = () => {
           )}
         />
       </div>
-      <div className="w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-evenly items-center gap-10 px-2 sm:pb-0 pb-10">
+      <div className="w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-evenly items-center gap-10 px-2 sm:pb-0 pb-10 mt-10">
+
         <div className="z-1 flex flex-col gap-2 h-fit w-full md:w-[45%] md:mt-[-180px] mt-[130px]">
           <h1 className="font-bold text-[28px]">
             Hi, I’m
@@ -54,7 +55,8 @@ const Hero = () => {
             <ButtonCTA2 />
           </div>
         </div>
-        <div className="z-1 h-[500px] w-full md:w-[30%] md:mt-[-200px] mt-[50px] flex flex-col items-center gap-2">
+
+        <div className="z-1 h-[500px] w-full md:w-[30%] md:mt-[-200px] mt-[50px] mb-[50px] flex flex-col items-center gap-2">
           <div className="relative top-25 bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-10 blur-2xl">
             <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400 blur-[100px] opacity-70" />
             <div className="relative bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-2 blur-md">

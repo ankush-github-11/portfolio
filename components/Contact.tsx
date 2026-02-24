@@ -6,8 +6,8 @@ import ContactForm from './ui/ContactForm';
 
 const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor w-full h-fit pt-15 pb-20">
-      <div className="px-[3%] h-full">
+    <div ref={ref} className="w-full sm:px-[8vw] px-[7px] bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor h-fit pt-15 pb-20">
+      <div className="h-full">
         <div className="h-fit w-full border-5 border-emerald/10 rounded-xl flex flex-col md:flex-row">
           <div className="left-div h-fit w-full md-w-[50%] p-2 md:p-5">
             <div className="bg-gray/10 p-3 md:p-4 rounded-lg flex flex-col justify-center w-full shadow-lg">

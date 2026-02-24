@@ -42,7 +42,8 @@
     --color-gray: #bbbbbb;
     --color-bordercolor: #e2e8f0;
 
-    --color-skills-card-bg: rgb(210, 250, 240);
+    --color-skills-card-bg-1: rgb(210, 250, 240);
+    --color-skills-card-bg-2: rgb(230, 255, 250);
 
     --color-project-1: rgb(193, 204, 220);
     --color-project-2: oklch(91.7% 0.08 205.041);
@@ -69,7 +70,8 @@
     --color-gray: #787878;
     --color-bordercolor: #334155;
     
-    --color-skills-card-bg: rgb(36, 61, 53);
+    --color-skills-card-bg-1: rgb(36, 61, 56);
+    --color-skills-card-bg-2: rgb(0, 73, 62);
 
     --color-project-1: #525f67;
     --color-project-2: oklch(52% 0.105 223.128);

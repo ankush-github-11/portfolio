@@ -5,7 +5,7 @@ import "../styles/skills.css";
 
 const Skills = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="min-h-screen w-full bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor flex flex-col gap-8 px-4 sm:px-6 md:px-10 pt-10 pb-18">
+    <div ref={ref} className="min-h-screen w-full bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor flex flex-col gap-8 sm:px-[8vw] px-[7px] pt-10 pb-18">
         <h2 className="text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
         <div className="h-fit w-full flex flex-row gap-2 items-center">
           <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">Frontend</h3>

@@ -71,9 +71,7 @@ $host = "localhost, $user = "root", $pass = "", $dbname = "mydb";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
@@ -121,7 +119,7 @@ listBuckets();
   }, [codes.length]);
 
   return (
-    <>
+    <section className="h-[82vh]">
       <div className="h-10 bg-textcolor/5 rounded-tl-2xl rounded-tr-2xl flex items-center gap-2">
         <div className="bg-red-500 h-4 w-4 rounded-full ml-4" />
         <div className="bg-yellow-500 h-4 w-4 rounded-full" />
@@ -155,6 +153,6 @@ listBuckets();
           </motion.pre>
         </AnimatePresence>
       </div>
-    </>
+    </section>
   );
 }

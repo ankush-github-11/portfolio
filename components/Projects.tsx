@@ -6,8 +6,8 @@ import ProjectCard4 from './ui/ProjectCard4';
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className='bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor h-fit w-full flex flex-col gap-10 pt-10 pb-25'>
-        <div className='w-[95%] mx-auto'>
+    <div ref={ref} className='bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor h-fit w-full flex flex-col gap-10 pt-10 pb-25 sm:px-[8vw] px-[7px]'>
+        <div>
           <h2 className="text-4xl font-extrabold text-textcolor mb-2">Projects</h2>
         </div>
         <ProjectCard1 />

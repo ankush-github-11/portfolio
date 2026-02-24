@@ -6,11 +6,11 @@ import CodeBlock from "./ui/CodeBlock";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor min-h-screen pt-0 lg:pt-20 h-fit max-w-full">
-      <div className="w-full flex lg:flex-row flex-col gap-x-8 px-3 lg:px-8">
+    <div className="bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor min-h-screen pt-0 lg:pt-20 h-fit max-w-full sm:px-[8vw] px-[7px]">
+      <div className="w-full flex lg:flex-row flex-col gap-x-17">
         {/* Left Section */}
         <div className="order-2 lg:order-1 flex-1 pb-20">
-          <div className="relative h-fit rounded-3xl lg:p-8 p-0 border border-bordercolor/20 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
+          <div className="relative h-fit rounded-3xl p-0 border border-bordercolor/20 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
             <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 opacity-70 blur-3xl"></div>
             <div className="relative h-full w-full rounded-2xl bg-white/5 border border-white/80 dark:border-white/20 flex flex-col justify-center">
               <CodeBlock />

@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="z-1 h-[500px] sm:w-full md:w-[35%] lg:w-fit md:mt-[-200px] mt-[50px] mb-[50px] flex flex-col items-center gap-2">
+        <div className="z-1 mr-0 md:mr-6 lg:mr-0 h-[500px] sm:w-full md:w-[35%] lg:w-fit md:mt-[-200px] mt-[50px] mb-[50px] flex flex-col items-center gap-2">
           <div className="relative top-25 bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-10 blur-2xl">
             <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400 blur-[100px] opacity-70" />
             <div className="relative bg-gradient-to-r dark:from-cyan-800 dark:to-emerald-800 from-cyan-200 to-emerald-200 rounded-full p-2 blur-md">

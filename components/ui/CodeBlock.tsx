@@ -119,7 +119,7 @@ listBuckets();
   }, [codes.length]);
 
   return (
-    <section className="h-[82vh]">
+    <section className="h-[72vh] sm:h-[82vh]">
       <div className="h-10 bg-textcolor/5 rounded-tl-2xl rounded-tr-2xl flex items-center gap-2">
         <div className="bg-red-500 h-4 w-4 rounded-full ml-4" />
         <div className="bg-yellow-500 h-4 w-4 rounded-full" />
@@ -149,7 +149,7 @@ listBuckets();
             transition={{ duration: 0.5 }}
             className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto code-block text-textcolorless"
           >
-            <code>{codes[currentIndex]}</code>
+            <code className="block w-full bg-gradient-to-r from-white via-cyan-300 to-emerald-300 bg-clip-text text-transparent">{codes[currentIndex]}</code>
           </motion.pre>
         </AnimatePresence>
       </div>

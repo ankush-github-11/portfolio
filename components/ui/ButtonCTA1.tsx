@@ -8,6 +8,7 @@ const ButtonCTA1 = () => {
           buttonCTA1 
           bg-[linear-gradient(155deg,var(--color-cyan-400),var(--color-emerald-400))]
           dark:bg-[linear-gradient(155deg,var(--color-cyan-600),var(--color-emerald-600))]
+          h-12
         "
       >
       <div className="svg-wrapper-1">

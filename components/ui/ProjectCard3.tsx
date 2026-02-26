@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import GithubButton from './GithubButton'
 import DemoButton from './DemoButton'
+import TechUsed from './TechUsed'
 
 const ProjectCard3 = () => {
   return (
@@ -10,14 +11,20 @@ const ProjectCard3 = () => {
       <div className='border-b-3 border-l-3 border-r-3 border-gray/40 rounded-xl h-[100%] overflow-hidden relative p-3 sm:p-7 sm:pb-0 flex flex-col items-center'>
         <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-textcolor to-transparent opacity-50 z-10" />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-project-3 to-transparent opacity-0 group-hover/main:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] pointer-events-none z-0 motion-safe:transition-opacity motion-reduce:transition-none" />
-        <div className='w-full z-20 flex md:flex-row md:items-center md:justify-between flex-col items-between justify-center gap-y-3'>
+        <div className='w-full z-20 flex md:flex-row md:items-center md:justify-between flex-col items-between justify-center gap-y-3 gap-x-3'>
           <div className='w-fit'>
             <h1 className='font-bold text-2xl'>Country Explorer</h1>
             <h1 className='font-semibold text-md text-textcolorless'>
               A API based, JAMstack project for getting information about a country and their neighbouring countries.
             </h1>
+            <div className='flex flex-wrap gap-x-2 gap-y-2 mt-2'>
+              <TechUsed techName="JAMstack" />
+              <TechUsed techName="JavaScript" />
+              <TechUsed techName="REST API" />
+              <TechUsed techName="Tailwind CSS" />
+            </div>
           </div>
-          <div className='group/button flex flex-nowrap w-fit ml-3 gap-5'>
+          <div className='group/button flex flex-nowrap w-fit gap-5'>
             <GithubButton url="https://github.com/ankush-github-11/My-Country-Explorer" />
             <DemoButton url="https://ankush-github-11.github.io/My-Country-Explorer" />
           </div>

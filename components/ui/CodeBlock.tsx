@@ -149,7 +149,7 @@ listBuckets();
             transition={{ duration: 0.5 }}
             className="whitespace-pre-wrap break-words text-sm sm:text-base md:p-3 p-0 rounded-lg overflow-x-auto code-block text-textcolorless"
           >
-            <code className="block w-full bg-gradient-to-r from-white via-cyan-300 to-emerald-300 bg-clip-text text-transparent">{codes[currentIndex]}</code>
+            <code className="block w-full bg-gradient-to-r from-black via-cyan-700 to-emerald-700 dark:from-white dark:via-cyan-300 dark:to-emerald-300 bg-clip-text text-transparent">{codes[currentIndex]}</code>
           </motion.pre>
         </AnimatePresence>
       </div>

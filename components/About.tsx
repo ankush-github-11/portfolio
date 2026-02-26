@@ -6,13 +6,13 @@ import CodeBlock from "./ui/CodeBlock";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-gray/15 dark:from-cyan-900 to-emerald-900 min-h-screen pt-0 lg:pt-20 h-fit max-w-full sm:px-[8vw] px-[7px]">
+    <div className="bg-gradient-to-br from-cyan-200 to-emerald-200 dark:from-cyan-900 dark:to-emerald-900 min-h-screen pt-0 lg:pt-20 h-fit max-w-full sm:px-[8vw] px-[7px]">
       <div className="w-full flex lg:flex-row flex-col gap-x-17">
         {/* Left Section */}
         <div className="order-2 lg:order-1 flex-1 pb-20">
-          <div className="relative h-fit rounded-3xl p-0 border border-bordercolor/20 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
-            <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-300/10 to-emerald-300/10 blur-sm"></div>
-            <div className="relative h-full w-full rounded-2xl bg-white/5 border border-white/80 dark:border-white/20 flex flex-col justify-center">
+          <div className="relative h-fit rounded-3xl p-0 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
+            <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-300/50 to-emerald-300/50 dark:from-cyan-300/10 dark:to-emerald-300/10 blur-sm"></div>
+            <div className="relative h-full w-full rounded-2xl bg-white/5 flex flex-col justify-center">
               <CodeBlock />
             </div>
           </div>

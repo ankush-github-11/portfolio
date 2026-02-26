@@ -51,7 +51,8 @@ import mongoose from "mongoose";
 const app = express();
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/mydb");
+mongoose.connect("mongodb:
+//localhost:27017/mydb");
 
 const userSchema = new mongoose.Schema({ 
   name: String, email: String 
@@ -67,7 +68,7 @@ app.post("/users", async (req, res) => {
 app.listen(3000, () => console.log("Server running on port 3000"));
 `,
 `<?php
-$host = "localhost, $user = "root", $pass = "", $dbname = "mydb";
+$host = "localhost", $user = "root", $pass = "", $dbname = "mydb";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
@@ -119,7 +120,7 @@ listBuckets();
   }, [codes.length]);
 
   return (
-    <section className="h-[72vh] sm:h-[82vh]">
+    <section className="h-[72vh] md:h-[82vh] lg:h-[90vh]">
       <div className="h-10 bg-textcolor/5 rounded-tl-2xl rounded-tr-2xl flex items-center gap-2">
         <div className="bg-red-500 h-4 w-4 rounded-full ml-4" />
         <div className="bg-yellow-500 h-4 w-4 rounded-full" />

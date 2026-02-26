@@ -16,3 +16,26 @@
 .dark .colorCSS:active{
   color: rgb(240, 240, 240);
 }
+@keyframes expandAndShrink {
+  0% {
+    width: 0%;
+    opacity: 0.2;
+  }
+  50% {
+    width: 100%;
+    opacity: 0.87;
+  }
+  100% {
+    width: 0%;
+    opacity: 0.2;
+  }
+}
+
+.expand-and-shrink {
+  background-size: 200% 100%;
+  animation:
+    expandAndShrink 5s ease-in-out infinite;
+  box-shadow:
+    0 0 8px rgba(6, 182, 212, 0.6),
+    0 0 16px rgba(16, 185, 129, 0.4);
+}

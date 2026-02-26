@@ -11,7 +11,7 @@ const About = () => {
         {/* Left Section */}
         <div className="order-2 lg:order-1 flex-1 pb-20">
           <div className="relative h-fit rounded-3xl p-0 border border-bordercolor/20 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
-            <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-emerald-950/10 to-emerald-950/10 blur-sm"></div>
+            <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-300/10 to-emerald-300/10 blur-sm"></div>
             <div className="relative h-full w-full rounded-2xl bg-white/5 border border-white/80 dark:border-white/20 flex flex-col justify-center">
               <CodeBlock />
             </div>

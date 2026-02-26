@@ -132,7 +132,7 @@ listBuckets();
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="ml-2 w-fit h-10 bg-inherit flex items-center justify-center px-5 rounded-tl-lg rounded-tr-lg text-textcolorless"
+            className="ml-2 w-fit h-10 bg-inherit dark:bg-white/15 flex items-center justify-center px-5 rounded-tl-lg rounded-tr-lg text-textcolor"
           >
             {fileNameTitle[currentIndex]}
           </motion.div>

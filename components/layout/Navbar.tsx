@@ -17,7 +17,7 @@ const Navbar = () => {
         height={70} 
         className='select-none z-1 absolute left-0 top-0'
       />
-      <div className='z-1000 overflow-hidden fixed bg-black/3.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
+      <div className='z-1000 overflow-hidden fixed bg-black/2.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
           <div className='flex gap-7 h-full w-full px-10 py-2 rounded-full'>
               <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>Skills</div>
               <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>My Works</div>
@@ -25,12 +25,12 @@ const Navbar = () => {
               <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
               {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
           </div>
-          <div className='w-full h-[1.5px] bg-gradient-to-r from-cyan-500 to-emerald-400'></div>
+          <div className='expand-and-shrink h-[1.5px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-400 dark:to-emerald-400 rounded-full'></div>
       </div>
 
 
       <div className='z-1000 h-[55px] flex sm:hidden fixed bottom-4 w-[50%] justify-center'>
-        <div className='h-[55px] w-[306px] bg-black/3.5 dark:bg-white/5 backdrop-blur-[2.5px] flex justify-evenly items-center rounded-full border-2 border-bordercolor'>
+        <div className='h-[55px] w-[306px] bg-black/3.5 dark:bg-white/5 backdrop-blur-[2.5px] flex justify-evenly items-center rounded-full'>
 
           <div className='colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer'>
             <WandSparkles strokeWidth={1.5} className='h-5 w-5' />

@@ -44,7 +44,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "cursor-pointer z-100 fixed right-[-5px] top-3 ml-auto flex px-4 py-2 bg-white/5 backdrop-blur-[2.5px] text-yellow-500 dark:text-emerald-400 font-medium transition-colors border-[2px] border-bordercolor/50 dark:border-bordercolor",
+          "cursor-pointer z-100 fixed right-[-5px] top-3 ml-auto flex px-4 py-2 bg-white/5 backdrop-blur-[2.5px] text-yellow-500 dark:text-emerald-400 font-medium transition-colors dark:border-bordercolor",
           "rounded-l-full rounded-r-none",
           className
         )}

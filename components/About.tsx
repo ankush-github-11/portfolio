@@ -15,29 +15,27 @@ const About = () => {
         {/* Left Section */}
         <div className="h-fit lg:min-h-screen w-full lg:w-[40vw] flex order-2 lg:order-1 flex-1 items-center">
           <Terminal>
-            <TypingAnimation>
-              $ whoami
-            </TypingAnimation>
+            <TypingAnimation>$ whoami</TypingAnimation>
             <AnimatedSpan>Ankush Bhattacharjee</AnimatedSpan>
             <AnimatedSpan>Full stack developer</AnimatedSpan>
-            <TypingAnimation>
-              $ npm install skills
-            </TypingAnimation>
-            <AnimatedSpan>Frontend  : React, TypeScript, Next.js, Tailwind</AnimatedSpan>
-            <AnimatedSpan>Backend   : Node.js, Express, PHP</AnimatedSpan>
-            <AnimatedSpan>Database  : MongoDB, MySQL</AnimatedSpan>
-            <AnimatedSpan>DevOps    : Git, Docker(learning), AWS(learning)</AnimatedSpan>
-            <AnimatedSpan>CS Core   : DSA, System Design</AnimatedSpan>
-            <AnimatedSpan>AI/ML     : Python, Scikit-learn</AnimatedSpan>
-            <AnimatedSpan className="text-green-600 dark:text-green-400">added 6 skill packages in 3years</AnimatedSpan>
-            <TypingAnimation>
-              $ projects
-            </TypingAnimation>
+            <TypingAnimation>$ npm install skills</TypingAnimation>
+            <AnimatedSpan>
+              Frontend : React, TypeScript, Next.js, Tailwind
+            </AnimatedSpan>
+            <AnimatedSpan>Backend : Node.js, Express, PHP</AnimatedSpan>
+            <AnimatedSpan>Database : MongoDB, MySQL</AnimatedSpan>
+            <AnimatedSpan>
+              DevOps : Git, Docker(learning), AWS(learning)
+            </AnimatedSpan>
+            <AnimatedSpan>CS Core : DSA, System Design</AnimatedSpan>
+            <AnimatedSpan>AI/ML : Python, Scikit-learn</AnimatedSpan>
+            <AnimatedSpan className="text-green-600 dark:text-green-400">
+              added 6 skill packages in 3years
+            </AnimatedSpan>
+            <TypingAnimation>$ projects</TypingAnimation>
             <AnimatedSpan>1. PollNow - Polling Application</AnimatedSpan>
             <AnimatedSpan>2. Library Dashboard</AnimatedSpan>
-            <TypingAnimation>
-              $ sudo hire-ankush
-            </TypingAnimation>
+            <TypingAnimation>$ sudo hire-ankush</TypingAnimation>
             <AnimatedSpan>Permission granted.</AnimatedSpan>
             <AnimatedSpan>Let&apos;s build the future</AnimatedSpan>
           </Terminal>

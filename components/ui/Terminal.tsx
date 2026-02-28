@@ -172,7 +172,10 @@ export const TypingAnimation = ({
   return (
     <MotionComponent
       ref={elementRef}
-      className={cn("relative grid text-sm font-normal tracking-tight", className)}
+      className={cn(
+        "relative grid text-sm font-normal tracking-tight",
+        className,
+      )}
       {...props}
     >
       <span aria-hidden="true" className="invisible [grid-area:1/1]">
@@ -239,7 +242,7 @@ export const Terminal = ({
       <div className="border-bordercolor flex flex-col gap-y-2 border-b-2 p-4">
         <div className="flex flex-row items-center gap-x-2">
           <svg
-            className="h-7 text-gray-600 dark:text-gray-400"
+            className=" h-6 sm:h-7 text-gray-600 dark:text-gray-400"
             viewBox="0 0 24.00 24.00"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +268,9 @@ export const Terminal = ({
               </g>{" "}
             </g>
           </svg>
-          <div className="text-gray-600 dark:text-gray-400 font-semibold text-[15px] lg:text-[18px]">Terminal</div>
+          <div className="text-gray-600 dark:text-gray-400 font-semibold text-[18px]">
+            Terminal
+          </div>
         </div>
       </div>
       <pre className="p-4 whitespace-pre-wrap break-words">

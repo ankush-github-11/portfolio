@@ -2,24 +2,49 @@ import React from "react";
 import "@/styles/about.css";
 import { BeamCollision } from "@/components/ui/BeamCollision";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-import CodeBlock from "./ui/CodeBlock";
+import {
+  AnimatedSpan,
+  Terminal,
+  TypingAnimation,
+} from "@/components/ui/Terminal";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-cyan-200 to-emerald-200 dark:from-cyan-900 dark:to-emerald-900 min-h-screen pt-0 lg:pt-20 h-fit max-w-full sm:px-[8vw] px-[7px]">
-      <div className="w-full flex lg:flex-row flex-col gap-x-17">
+    <div className="bg-gradient-to-br from-cyan-200 to-emerald-200 dark:from-cyan-900 dark:to-emerald-900 min-h-screen h-fit max-w-full py-17 lg:py-0 sm:px-[8vw] px-[7px]">
+      <div className="h-full w-full flex lg:flex-row flex-col gap-x-17">
         {/* Left Section */}
-        <div className="order-2 lg:order-1 flex-1 pb-20">
-          <div className="relative h-fit rounded-3xl p-0 bg-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
-            <div className="z-0 absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-300/50 to-emerald-300/50 dark:from-cyan-300/10 dark:to-emerald-300/10 blur-sm"></div>
-            <div className="relative h-full w-full rounded-2xl bg-white/5 flex flex-col justify-center">
-              <CodeBlock />
-            </div>
-          </div>
+        <div className="h-fit lg:min-h-screen w-full lg:w-[40vw] flex order-2 lg:order-1 flex-1 items-center">
+          <Terminal>
+            <TypingAnimation>
+              $ whoami
+            </TypingAnimation>
+            <AnimatedSpan>Ankush Bhattacharjee</AnimatedSpan>
+            <AnimatedSpan>Full stack developer</AnimatedSpan>
+            <TypingAnimation>
+              $ npm install skills
+            </TypingAnimation>
+            <AnimatedSpan>Frontend  : React, TypeScript, Next.js, Tailwind</AnimatedSpan>
+            <AnimatedSpan>Backend   : Node.js, Express, PHP</AnimatedSpan>
+            <AnimatedSpan>Database  : MongoDB, MySQL</AnimatedSpan>
+            <AnimatedSpan>DevOps    : Git, Docker(learning), AWS(learning)</AnimatedSpan>
+            <AnimatedSpan>CS Core   : DSA, System Design</AnimatedSpan>
+            <AnimatedSpan>AI/ML     : Python, Scikit-learn</AnimatedSpan>
+            <AnimatedSpan className="text-green-600 dark:text-green-400">added 6 skill packages in 3years</AnimatedSpan>
+            <TypingAnimation>
+              $ projects
+            </TypingAnimation>
+            <AnimatedSpan>1. PollNow - Polling Application</AnimatedSpan>
+            <AnimatedSpan>2. Library Dashboard</AnimatedSpan>
+            <TypingAnimation>
+              $ sudo hire-ankush
+            </TypingAnimation>
+            <AnimatedSpan>Permission granted.</AnimatedSpan>
+            <AnimatedSpan>Let&apos;s build the future</AnimatedSpan>
+          </Terminal>
         </div>
 
         {/* Right Section */}
-        <BeamCollision className="pt-[50px] lg:pt-0 pb-[75px] lg:pb-[75px] order-1 lg:order-2 bg-inherit flex-1 w-full flex flex-col items-center justify-center text-center">
+        <BeamCollision className="h-screen order-1 lg:order-2 bg-inherit flex-1 w-full flex flex-col items-center justify-center text-center pb-17 lg:pb-0">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-cyan-500 to-emerald-500 bg-clip-text text-transparent">
             About Me
           </h1>

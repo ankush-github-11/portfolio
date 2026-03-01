@@ -25,7 +25,9 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
         animate-blob-two
         pointer-events-none"
       />
-      <h2 className="reveal reveal-left text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
+      <h2 className="reveal reveal-left text-4xl font-extrabold text-textcolor mb-2">
+        Skills
+      </h2>
       <div className="reveal reveal-right h-fit w-full flex flex-row gap-2 items-center">
         <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">
           Frontend

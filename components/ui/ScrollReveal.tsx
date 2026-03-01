@@ -16,9 +16,8 @@ export default function ScrollReveal({
   delay = 0,
   duration = 0.8,
 }: ScrollRevealProps) {
-  
   const getInitialPosition = () => {
-    const px = 80; 
+    const px = 80;
     switch (direction) {
       case "left":
         return { opacity: 0, x: px };

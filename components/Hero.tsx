@@ -19,13 +19,12 @@ const Hero = () => {
             "[mask-image:linear-gradient(to_right,transparent,black_30px,black_calc(100%-30px),transparent),linear-gradient(to_bottom,transparent,black_30px,black_calc(100%-30px),transparent)]",
             "[mask-composite:intersect]",
             "[-webkit-mask-image:linear-gradient(to_right,transparent,black_30px,black_calc(100%-30px),transparent),linear-gradient(to_bottom,transparent,black_30px,black_calc(100%-30px),transparent)]",
-            "[-webkit-mask-composite:destination-in]"
+            "[-webkit-mask-composite:destination-in]",
           )}
         />
       </div>
 
       <div className="w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-center md:justify-between sm:px-[8vw] px-[7px] items-center gap-x-17 sm:pb-0 pb-10 mt-10">
-
         <div className="z-1 flex flex-col gap-2 h-fit sm:w-full md:w-[40%] lg:w-[48%] md:mt-[-180px] mt-[130px]">
           <h1 className="reveal reveal-right font-bold text-[28px]">
             Hi, I’m

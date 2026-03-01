@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="pb-15 sm:pb-0 w-full sm:px-[8vw] px-[7px] bg-gradient-to-br from-gray/15 dark:from-lightgray/80 to-bgcolor backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <div className="text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold">
+        <div className="reveal reveal-right text-center md:text-left text-gray-700 dark:text-gray-300 font-semibold">
           © {currentYear} • Built with ❤️ by Ankush
         </div>
-        <div className="flex justify-center md:justify-end items-center gap-6">
+        <div className="reveal reveal-left flex justify-center md:justify-end items-center gap-6">
 
           <FooterIcon href="https://x.com/coder_ankush" label="Twitter">
             <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />

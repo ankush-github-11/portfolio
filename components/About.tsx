@@ -10,10 +10,10 @@ import {
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-cyan-200 to-emerald-200 dark:from-cyan-900 dark:to-emerald-900 min-h-screen h-fit max-w-full py-17 lg:py-0 sm:px-[8vw] px-[7px]">
-      <div className="h-full w-full flex lg:flex-row flex-col gap-x-17">
+    <div className="reveal reveal-up bg-gradient-to-br from-cyan-200 to-emerald-300 dark:from-cyan-900 dark:to-emerald-800 min-h-[110vh] h-fit max-w-full py-17 lg:py-0 sm:px-[8vw] px-[7px]">
+      <div className="lg:min-h-[110vh] h-full w-full flex lg:flex-row flex-col gap-x-17">
         {/* Left Section */}
-        <div className="h-fit lg:min-h-screen w-full lg:w-[40vw] flex order-2 lg:order-1 flex-1 items-center">
+        <div className="lg:min-h-[110vh] reveal reveal-up-right delay-7 h-fit w-full lg:w-[40vw] flex order-2 lg:order-1 flex-1 items-center">
           <Terminal>
             <TypingAnimation>$ whoami</TypingAnimation>
             <AnimatedSpan>Ankush Bhattacharjee</AnimatedSpan>
@@ -42,7 +42,7 @@ const About = () => {
         </div>
 
         {/* Right Section */}
-        <BeamCollision className="h-screen order-1 lg:order-2 bg-inherit flex-1 w-full flex flex-col items-center justify-center text-center pb-17 lg:pb-0">
+        <BeamCollision className="lg:min-h-[110vh] reveal reveal-down-left delay-7 h-screen order-1 lg:order-2 bg-inherit flex-1 w-full flex flex-col items-center justify-center text-center pb-17 lg:pb-0">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-cyan-500 to-emerald-500 bg-clip-text text-transparent">
             About Me
           </h1>

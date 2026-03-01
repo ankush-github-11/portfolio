@@ -8,28 +8,28 @@ const Navbar = () => {
   const { scrollToProjects } = useScroll();
   const { scrollToSkills } = useScroll();
   return (
-    <div draggable="false" className='select-none flex justify-center w-full'>
+    <nav draggable="false" className='select-none flex justify-center w-full'>
       <Image 
         draggable="false"
         src="/images/logo.png" 
         alt="Logo" 
         width={70} 
         height={70} 
-        className='select-none z-1 absolute left-0 top-0'
+        className='reveal reveal-up-left select-none z-1 absolute left-0 top-0'
       />
-      <div className='z-1000 overflow-hidden fixed bg-black/2.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
+      <div className='reveal reveal-up z-1000 overflow-hidden fixed bg-black/2.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
           <div className='flex gap-7 h-full w-full px-10 py-2 rounded-full'>
               <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>Skills</div>
               <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>My Works</div>
-              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>GitHub <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
-              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-2px]" /></a>
+              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>GitHub <ArrowUpRight strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
+              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
               {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
           </div>
           <div className='expand-and-shrink h-[1.5px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-400 dark:to-emerald-400 rounded-full'></div>
       </div>
 
 
-      <div className='z-1000 h-[55px] flex sm:hidden fixed bottom-4 w-[50%] justify-center'>
+      <div className='reveal reveal-down z-1000 h-[55px] flex sm:hidden fixed bottom-4 w-[50%] justify-center'>
         <div className='h-[55px] w-[306px] bg-black/3.5 dark:bg-white/5 backdrop-blur-[2.5px] flex justify-evenly items-center rounded-full'>
 
           <div className='colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer'>
@@ -85,7 +85,7 @@ const Navbar = () => {
           </div> */}
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

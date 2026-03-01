@@ -6,7 +6,7 @@ import TechUsed from './TechUsed'
 
 const ProjectCard3 = () => {
   return (
-    <div className='group/main h-fit w-full mx-auto p-[5px] rounded-2xl bg-bgcolorless relative overflow-hidden pt-2'>
+    <div className='reveal reveal-up group/main h-fit w-full mx-auto p-[5px] rounded-2xl bg-bgcolorless relative overflow-hidden pt-2'>
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-textcolor to-transparent opacity-70" />
       <div className='border-b-3 border-l-3 border-r-3 border-gray/40 rounded-xl h-[100%] overflow-hidden relative p-3 sm:p-7 sm:pb-0 flex flex-col items-center'>
         <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-textcolor to-transparent opacity-50 z-10" />

@@ -23,10 +23,11 @@ const Hero = () => {
           )}
         />
       </div>
-      <div className="w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-between sm:px-[8vw] px-[7px] items-center gap-x-17 sm:pb-0 pb-10 mt-10">
+
+      <div className="w-full h-fit min-h-screen flex flex-wrap md:flex-nowrap justify-center md:justify-between sm:px-[8vw] px-[7px] items-center gap-x-17 sm:pb-0 pb-10 mt-10">
 
         <div className="z-1 flex flex-col gap-2 h-fit sm:w-full md:w-[40%] lg:w-[48%] md:mt-[-180px] mt-[130px]">
-          <h1 className="font-bold text-[28px]">
+          <h1 className="reveal reveal-right font-bold text-[28px]">
             Hi, I’m
             <span className="text-emerald-400 text-4xl mx-2 wave-text">
               <span>A</span>
@@ -38,19 +39,19 @@ const Hero = () => {
             </span>
             Bhattacharjee
           </h1>
-          <h1 className="text-gray font-medium text-l mb-4 tracking-wide flex gap-2">
+          <h1 className="reveal reveal-right text-gray font-medium text-l mb-4 tracking-wide flex gap-2">
             <MapPin
               className="text-cyan-400 dark:text-cyan-500"
               strokeWidth={1.5}
             />
             Based in Kolkata, India
           </h1>
-          <h1 className="font-regular flex flex-col flex-wrap w-full text-textcolorless">
+          <h1 className="reveal reveal-right font-regular flex flex-col flex-wrap w-full text-textcolorless">
             Full Stack Developer at heart, AI/ML enthusiast by curiosity, and a
             problem-solver fueled by DSA. I create systems that are smart,
             seamless, and scalable.
           </h1>
-          <div className="flex flex-wrap gap-5 mt-5 h-min">
+          <div className="reveal reveal-left flex flex-wrap gap-5 mt-5 h-min">
             <ButtonCTA1 />
             <ButtonCTA2 />
           </div>
@@ -68,16 +69,16 @@ const Hero = () => {
             alt="Ankush Bhattacharjee Image"
             width={300}
             height={300}
-            className="z-1 relative -top-55"
+            className="reveal reveal-left z-1 relative -top-55"
           />
-          <div className="italic relative -top-57 bg-bgcolor border-2 border-bordercolor p-2 rounded-lg text-textcolorless font-medium text-xl opacity-60 tracking-wide flex gap-2 text-center">
+          <div className="reveal reveal-right italic relative -top-57 bg-white/50 dark:bg-bgcolor/50 border-2 border-bordercolor p-2 rounded-lg text-textcolor/65 dark:text-textcolorless/90 font-medium text-xl opacity-60 tracking-wide flex gap-2 text-center">
             <span>Web Developer</span>
-            <div className="rounded-full w-[2px] min-h-[30px] bg-cyan" />
+            <div className="rounded-full w-[0.1875rem] min-h-[30px] bg-cyan" />
             <span>ML Expert</span>
-            <div className="rounded-2xl w-[2px] min-h-[30px] bg-emerald" />
+            <div className="rounded-2xl w-[0.1875rem] min-h-[30px] bg-emerald" />
             <span>Problem Solver</span>
           </div>
-          <HeroLanguageButton className="my-bounce z-10 relative top-[-400px] right-[90px]">
+          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-440px] right-[90px]">
             <Image
               alt="React Logo"
               src="/images/react-logo.svg"
@@ -85,7 +86,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton className="my-bounce z-10 relative top-[-670px] right-[40px]">
+          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-710px] right-[40px]">
             <Image
               alt="MongoDB Logo"
               src="/images/mongodb-logo.svg"
@@ -93,7 +94,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton className="my-bounce z-10 relative top-[-650px] left-[170px]">
+          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-690px] left-[170px]">
             <Image
               alt="AWS Logo"
               src="/images/aws-logo-light.svg"

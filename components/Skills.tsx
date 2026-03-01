@@ -25,14 +25,14 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
         animate-blob-two
         pointer-events-none"
       />
-      <h2 className="text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
-      <div className="h-fit w-full flex flex-row gap-2 items-center">
+      <h2 className="reveal reveal-left text-4xl font-extrabold text-textcolor mb-2">Skills</h2>
+      <div className="reveal reveal-right h-fit w-full flex flex-row gap-2 items-center">
         <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">
           Frontend
         </h3>
         <div className="flex-1 h-[2px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-800 dark:to-emerald-800 rounded-full mt-1" />
       </div>
-      <div className="responsive-grid">
+      <div className="reveal reveal-right responsive-grid">
         <SkillsCard title="React JS">
           <g>
             <circle cx="64" cy="64" r="11.4"></circle>
@@ -107,14 +107,14 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
         </SkillsCard>
       </div>
 
-      <div className="h-fit w-full flex flex-row gap-2 items-center">
+      <div className="reveal reveal-right h-fit w-full flex flex-row gap-2 items-center">
         <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">
           Backend
         </h3>
         <div className="flex-1 h-[2px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-800 dark:to-emerald-800 rounded-full mt-1" />
       </div>
 
-      <div className="responsive-grid">
+      <div className="reveal reveal-right responsive-grid">
         <SkillsCard title="Node JS">
           <path
             fill="#5fa04e"
@@ -266,14 +266,14 @@ const Skills = forwardRef<HTMLDivElement>((props, ref) => {
         </SkillsCard>
       </div>
 
-      <div className="h-fit w-full flex flex-row gap-2 items-center">
+      <div className="reveal reveal-right h-fit w-full flex flex-row gap-2 items-center">
         <h3 className="whitespace-nowrap text-2xl font-semibold text-textcolorless/80">
           Machine Learning
         </h3>
         <div className="flex-1 h-[2px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-800 dark:to-emerald-800 rounded-full mt-1" />
       </div>
 
-      <div className="responsive-grid">
+      <div className="reveal reveal-right responsive-grid">
         <SkillsCard title="NumPy">
           <path
             fill="#4DABCF"

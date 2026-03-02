@@ -77,7 +77,7 @@ const Hero = () => {
             <div className="rounded-2xl w-[0.1875rem] min-h-[30px] bg-emerald" />
             <span>Problem Solver</span>
           </div>
-          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-440px] right-[90px]">
+          <HeroLanguageButton className="glow-fade-in-hero-lang-btns my-bounce z-10 relative top-[-440px] right-[90px]">
             <Image
               alt="React Logo"
               src="/images/react-logo.svg"
@@ -85,7 +85,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-710px] right-[40px]">
+          <HeroLanguageButton className="glow-fade-in-hero-lang-btns my-bounce z-10 relative top-[-710px] right-[40px]">
             <Image
               alt="MongoDB Logo"
               src="/images/mongodb-logo.svg"
@@ -93,7 +93,7 @@ const Hero = () => {
               height={30}
             />
           </HeroLanguageButton>
-          <HeroLanguageButton className="reveal reveal-down my-bounce z-10 relative top-[-690px] left-[170px]">
+          <HeroLanguageButton className="glow-fade-in-hero-lang-btns my-bounce z-10 relative top-[-690px] left-[170px]">
             <Image
               alt="AWS Logo"
               src="/images/aws-logo-light.svg"

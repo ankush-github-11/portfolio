@@ -1,58 +1,58 @@
 .wave-text span {
-    display: inline-block;
-    animation: wave 2.5s ease-in-out infinite;
+  display: inline-block;
+  animation: wave 2.5s ease-in-out infinite;
 }
 
 .wave-text span:nth-child(1) {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .wave-text span:nth-child(2) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .wave-text span:nth-child(3) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .wave-text span:nth-child(4) {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .wave-text span:nth-child(5) {
-    animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .wave-text span:nth-child(6) {
-    animation-delay: 1.0s;
+  animation-delay: 1s;
 }
 
 @keyframes wave {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-4px);
-    }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes spin-slow {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-spin-slow {
-    animation: spin-slow 6s linear infinite;
+  animation: spin-slow 6s linear infinite;
 }
 
-/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by adamgiebl */
 .buttonCTA1 {
   font-family: inherit;
   font-size: 16px;
@@ -114,7 +114,11 @@
   border-radius: 16px;
   border: none;
   padding: 2px;
-  background: radial-gradient(circle 80px at 80% -10%, #ffffff, var(--color-lightgray));
+  background: radial-gradient(
+    circle 80px at 80% -10%,
+    #ffffff,
+    var(--color-lightgray)
+  );
   position: relative;
   width: 150px;
 }
@@ -152,7 +156,11 @@
   color: var(--color-textcolor);
   z-index: 3;
   position: relative;
-  background: radial-gradient(circle 80px at 80% -50%, #777777, var(--color-bgcolor));
+  background: radial-gradient(
+    circle 80px at 80% -50%,
+    #777777,
+    var(--color-bgcolor)
+  );
 }
 .inner::before {
   content: "";
@@ -170,7 +178,8 @@
   position: absolute;
 }
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
@@ -196,5 +205,12 @@
 
 .glow-fade-in {
   opacity: 0;
-  animation: glowFadeIn 5s ease-out forwards;
+  animation: glowFadeIn 4s ease-out forwards;
+}
+
+.glow-fade-in-hero-lang-btns {
+  opacity: 0;
+  animation:
+    glowFadeIn 2.5s ease-out 1s forwards,
+    bounce 2.2s 3.5s infinite;
 }

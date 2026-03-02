@@ -19,10 +19,18 @@ const Navbar = () => {
       />
       <div className='reveal reveal-up z-1000 overflow-hidden fixed bg-black/2.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
           <div className='flex gap-7 h-full w-full px-10 py-2 rounded-full'>
-              <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>Skills</div>
-              <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>My Works</div>
-              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>GitHub <ArrowUpRight strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
-              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>LinkedIn <ArrowUpRight strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
+              <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>
+                <span className='gradient-text'>Skills</span>
+                </div>
+              <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>
+                <span className='gradient-text'>My Works</span></div>
+              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>
+              <span className='gradient-text'>GitHub</span>
+              <ArrowUpRight stroke="currentColor" strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" />
+              </a>
+              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>
+              <span className='gradient-text'>LinkedIn</span>
+              <ArrowUpRight stroke='currentColor' strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
               {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
           </div>
           <div className='expand-and-shrink h-[1.5px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-400 dark:to-emerald-400 rounded-full'></div>

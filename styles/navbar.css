@@ -4,17 +4,29 @@
 .dark .colorCSS {
   color: rgb(240, 240, 240);
 }
+.colorCSS {
+  transition: color 0.2s ease;
+}
 .colorCSS:hover {
-  color: #00b972;
+  color: rgb(0, 212, 146);
 }
 .dark .colorCSS:hover {
-  color: #12ccb0;
+  color: rgb(0, 212, 146);
 }
-.colorCSS:active{
-  color: #454545;
+
+.colorCSS:hover .gradient-text {
+  background: linear-gradient(90deg, oklch(71.5% 0.143 215.221), oklch(76.5% 0.177 163.223));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.dark .colorCSS:active{
-  color: rgb(240, 240, 240);
+
+/* Dark mode gradient */
+.dark .colorCSS:hover .gradient-text {
+  background: linear-gradient(90deg, oklch(71.5% 0.143 215.221), oklch(76.5% 0.177 163.223));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 @keyframes expandAndShrink {
   0% {

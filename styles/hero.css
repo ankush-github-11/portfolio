@@ -211,6 +211,6 @@
 .glow-fade-in-hero-lang-btns {
   opacity: 0;
   animation:
-    glowFadeIn 2.5s ease-out 1s forwards,
-    bounce 2.2s 3.5s infinite;
+    glowFadeIn 1.5s ease-out 0.5s forwards,
+    bounce 2.2s 2.0s infinite;
 }

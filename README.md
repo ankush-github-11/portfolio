@@ -22,7 +22,6 @@ A modern, responsive developer portfolio crafted with Next.js, TypeScript, and T
 - React 19
 - TypeScript
 - Tailwind CSS 4
-- Framer Motion
 - Lenis (smooth scrolling)
 - next-themes (dark/light mode)
 - EmailJS (contact form)

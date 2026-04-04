@@ -23,7 +23,7 @@ const ProjectCard2 = () => {
               <TechUsed techName="Node.js" />
               <TechUsed techName="Tailwind CSS" />
             </div>
-            <div className='mt-2 flex justify-center items-center dark:text-emerald-500 text-emerald-700 font-semibold text-sm px-3 py-1 border-2 dark:border-emerald-500 border-emerald-700 rounded-lg w-fit'>Under Construction</div>
+            <div className='mt-2 flex justify-center items-center dark:text-emerald-500 text-emerald-700 font-semibold text-sm px-3 py-1 border-2 dark:border-emerald-500 border-emerald-700 rounded-lg w-fit'>Under Development</div>
           </div>
           <div className='group/button flex flex-nowrap w-fit gap-5'>
             <GithubButton url="https://github.com/ankush-github-11/typing-test-system" />

@@ -1,60 +1,99 @@
-import { ArrowUpRight, Wallpaper, WandSparkles } from 'lucide-react'
+import { ArrowUpRight, Wallpaper, WandSparkles } from "lucide-react";
 // import { BookOpenCheck } from 'lucide-react'
-import React from 'react'
+import React from "react";
 import Image from "next/image";
-import { useScroll } from '@/context/ScrollContext';
+import { useScroll } from "@/context/ScrollContext";
 import "@/styles/navbar.css";
 const Navbar = () => {
   const { scrollToProjects } = useScroll();
   const { scrollToSkills } = useScroll();
   return (
-    <nav draggable="false" className='select-none flex justify-center w-full'>
-      <Image 
+    <nav draggable="false" className="select-none flex justify-center w-full">
+      <Image
         draggable="false"
-        src="/images/logo.png" 
-        alt="Logo" 
-        width={70} 
-        height={70} 
-        className='reveal reveal-up-left select-none z-1 absolute left-0 top-0'
+        src="/images/logo.png"
+        alt="Logo"
+        width={70}
+        height={70}
+        className="reveal reveal-up-left select-none z-1 absolute left-0 top-0"
       />
-      <div className='reveal reveal-up z-1000 overflow-hidden fixed bg-black/2.5 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center'>
-          <div className='flex gap-7 h-full w-full px-10 py-2 rounded-full'>
-              <div onClick={scrollToSkills} className='colorCSS cursor-pointer font-semibold flex items-center'>
-                <span className='gradient-text'>Skills</span>
-                </div>
-              <div onClick={scrollToProjects} className='colorCSS cursor-pointer italic font-semibold flex items-center'>
-                <span className='gradient-text'>My Works</span></div>
-              <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className='colorCSS cursor-pointer font-semibold flex items-center'>
-              <span className='gradient-text'>GitHub</span>
-              <ArrowUpRight stroke="currentColor" strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" />
-              </a>
-              <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className='colorCSS cursor-pointer font-semibold flex items-center'>
-              <span className='gradient-text'>LinkedIn</span>
-              <ArrowUpRight stroke='currentColor' strokeWidth={3} className="h-4 ml-[-5px] mb-[2px]" /></a>
-              {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
+      <div className="reveal reveal-up z-1000 overflow-hidden fixed bg-black/4 dark:bg-white/5 backdrop-blur-[4px] hidden w-fit h-fit rounded-full sm:flex flex-col items-center">
+        <div className="flex gap-7 h-full w-full px-10 py-2 rounded-full">
+          <div
+            onClick={scrollToSkills}
+            className="colorCSS cursor-pointer font-semibold flex items-center"
+          >
+            <span className="gradient-text">Skills</span>
           </div>
-          <div className='expand-and-shrink h-[1.5px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-400 dark:to-emerald-400 rounded-full'></div>
+          <div
+            onClick={scrollToProjects}
+            className="colorCSS cursor-pointer italic font-semibold flex items-center"
+          >
+            <span className="gradient-text">My Works</span>
+          </div>
+          <a
+            draggable="false"
+            target="_blank"
+            href="https://github.com/ankush-github-11"
+            className="colorCSS cursor-pointer font-semibold flex items-center"
+          >
+            <span className="gradient-text">GitHub</span>
+            <ArrowUpRight
+              stroke="currentColor"
+              strokeWidth={3}
+              className="h-4 ml-[-5px] mb-[2px]"
+            />
+          </a>
+          <a
+            draggable="false"
+            target="_blank"
+            href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/"
+            className="colorCSS cursor-pointer font-semibold flex items-center"
+          >
+            <span className="gradient-text">LinkedIn</span>
+            <ArrowUpRight
+              stroke="currentColor"
+              strokeWidth={3}
+              className="h-4 ml-[-5px] mb-[2px]"
+            />
+          </a>
+          {/* <div className='cursor-pointer font-semibold flex items-center'>Services</div> */}
+        </div>
+        <div className="expand-and-shrink h-[1.5px] bg-gradient-to-r from-cyan-300 to-emerald-300 dark:from-cyan-400 dark:to-emerald-400 rounded-full"></div>
       </div>
 
-
-      <div className='reveal reveal-down z-1000 h-[55px] flex sm:hidden fixed bottom-4 w-[50%] justify-center'>
-        <div className='h-[55px] w-[306px] bg-black/3.5 dark:bg-white/5 backdrop-blur-[2.5px] flex justify-evenly items-center rounded-full'>
-
-          <div className='colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer'>
-            <WandSparkles strokeWidth={1.5} className='h-5 w-5' />
-            <div onClick={scrollToSkills} className='font-medium tracking-wide text-[11px]'>Skills</div>
+      <div className="reveal reveal-down fixed bottom-4 z-[1000] h-[55px] w-[95%] max-w-[350px] flex justify-center items-center sm:hidden backdrop-blur-[4px] bg-black/4 dark:bg-white/5 rounded-full">
+        <div className="h-[55px] w-full flex justify-evenly items-center rounded-full">
+          <div className="colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer">
+            <WandSparkles strokeWidth={1.5} className="h-5 w-5" />
+            <div
+              onClick={scrollToSkills}
+              className="font-medium tracking-wide text-[11px]"
+            >
+              Skills
+            </div>
           </div>
 
-          <div className='rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700' />
+          <div className="rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700" />
 
-          <div onClick={scrollToProjects} className='colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer'>
-            <Wallpaper strokeWidth={1.5} className='h-5 w-5'/>
-            <div className='font-semibold tracking-wide text-[11px] italic'>My Works</div>
+          <div
+            onClick={scrollToProjects}
+            className="colorCSS h-full w-[75px] flex justify-center flex-col items-center cursor-pointer"
+          >
+            <Wallpaper strokeWidth={1.5} className="h-5 w-5" />
+            <div className="font-semibold tracking-wide text-[11px] italic">
+              My Works
+            </div>
           </div>
 
-          <div className='rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700' />
+          <div className="rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700" />
 
-          <a draggable="false" target='_blank' href='https://github.com/ankush-github-11' className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
+          <a
+            draggable="false"
+            target="_blank"
+            href="https://github.com/ankush-github-11"
+            className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group"
+          >
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -66,13 +105,21 @@ const Navbar = () => {
             </svg>
             <span className="ml-[3px] text-[11px] font-semibold tracking-wide flex">
               <div>GitHub</div>
-              <ArrowUpRight strokeWidth={3} className="h-3 ml-[-1px] mt-[1px] w-fit" />
+              <ArrowUpRight
+                strokeWidth={3}
+                className="h-3 ml-[-1px] mt-[1px] w-fit"
+              />
             </span>
           </a>
 
-          <div className='rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700' />
+          <div className="rounded-full h-[80%] w-[2px] bg-gradient-to-b from-cyan-700 to-emerald-700" />
 
-          <a draggable="false" target='_blank' href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/" className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group">
+          <a
+            draggable="false"
+            target="_blank"
+            href="https://www.linkedin.com/in/ankush-bhattacharjee-609972302/"
+            className="colorCSS h-full w-[75px] flex flex-col items-center justify-center cursor-pointer group"
+          >
             <svg
               viewBox="0 0 382 382"
               className="w-4 h-5 fill-current transition-colors"
@@ -82,7 +129,10 @@ const Navbar = () => {
             </svg>
             <span className="ml-[3px] text-[11px] font-semibold tracking-wide flex">
               <div>LinkedIn</div>
-              <ArrowUpRight strokeWidth={3} className="h-3 ml-[-1px] mt-[1px] w-fit" />
+              <ArrowUpRight
+                strokeWidth={3}
+                className="h-3 ml-[-1px] mt-[1px] w-fit"
+              />
             </span>
           </a>
 
@@ -94,7 +144,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

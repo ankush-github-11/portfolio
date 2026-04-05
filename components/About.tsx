@@ -49,9 +49,9 @@ const About = () => {
           <div className="mt-4 text-lg text-textcolorless text-left">
             I’m a Full-Stack Developer passionate about building fast, scalable,
             and user-friendly web applications. I specialize in{" "}
-            <span className="font-bold">React</span>,{" "}
-            <span className="font-bold">Node.js</span>, and{" "}
-            <span className="font-bold">TypeScript</span>, and I enjoy turning
+            <span className="font-bold">NextJS</span>,{" "}
+            <span className="font-bold">TypeScript</span>, and{" "}
+            <span className="font-bold">PHP</span>, and I enjoy turning
             complex problems into simple, elegant solutions.
           </div>
           <div className="mt-4 text-lg text-textcolorless text-left">

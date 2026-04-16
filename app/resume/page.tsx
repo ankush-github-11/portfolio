@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div className="relative h-screen w-full">
       <a
-        href="/Ankush_Bhattacharjee_Resume.pdf"
+        href="/Ankush_Bhattacharjee_Developer.pdf"
         download
         className="
           fixed bottom-6 right-6 z-50
@@ -18,7 +18,7 @@ const page = () => {
         <Download strokeWidth={3} size={24} className="text-white"/>
       </a>
       <iframe
-        src="/Ankush_Bhattacharjee_Resume.pdf"
+        src="/Ankush_Bhattacharjee_Developer.pdf"
         className="w-full h-full"
         title="Ankush Bhattacharjee Resume"
       />
